@@ -1,0 +1,139 @@
+INICIO
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-contacto{
+    text-align: center;
+    transition: opacity 1s ease;
+    pointer-events: auto;
+    background-color:rgb(128, 128, 145);
+}
+.container-contacto.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.container{
+
+    background-color:rgb(128, 128, 145);
+    padding: 10px;
+    margin-top: -10px;
+
+
+
+}
+.container-contacto h3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    display: inline-flex;
+    font-size: 15px;
+    margin-bottom: -10px;
+    background-color:rgb(128, 128, 145);
+
+}
+.in{
+    display: inline-block;
+}
+.carousel-item h5{
+    color: black;
+    font-size: 40px;
+
+    
+}
+.carousel-item{
+    max-width: 2000px;
+    max-height: 700px;
+}
+.container a{
+    display: inline-block;
+    background-color:rgb(128, 128, 145);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 3px;
+    color: black;
+    text-decoration: none;
+}
+
+.LM{
+    display: inline-block;
+    background-color:rgb(128, 128, 145);
+    width: 14px;
+    margin-right: 5px;
+    text-align: center;
+
+
+}
+
+CARRUSEL
+
+.carrousel{
+    width: 200px;
+    height: 200px;
+}
+
+NAVBAR
+.navbar {
+    position: fixed; /* Mantener la navbar fija en la parte superior */
+    top: 0;
+    width: 100%;
+    background-color:transparent; /* Color de fondo inicial (transparente) */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    z-index: 9999; /* Asegurar que la navbar esté por encima de otros elementos */
+}
+.navbar img {
+    max-width: 400px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 0;
+}
+.navbar li {
+    margin: 0 10px;
+}
+.navbar a {
+    color: #000000;
+    margin-right: 100px;
+    margin-left: 100px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+  /* Estilo para navbar cuando se hace scroll hacia abajo */
+.navbar.scrolled {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+  /* Espacio para que la navbar no se solape con el contenido */
+.content {
+    margin-top: 100px;
+}
+.container.info{
+    padding: 4000px;
+}
+/*INFO*/
+.info{
+    padding: 500px;
+    margin-top: -500px;
+}
+.info h1{
+    text-align: center;
+    margin-top: 40px;
+}
+.info a{
+    text-align: center;
+    margin-left: 250px;
+    font-size: 20px;
+}
+@media only screen and (max-width: 480px) {
+    .logo2{
+        width: 200px;
+    }
+}
