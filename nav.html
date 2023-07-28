@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicio - Maclar</title>
+        <link rel="icon" href="img\LOGO.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link rel="icon" href="img\LOGO.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="nav.css">
-</head>
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="med.css">
+  </head>
 <body>
+  <div class="animate-opacity"></div>
     <header>
         <nav>
             <ul>
-                <li><a>Nosotros</a> </li>
-                <li><a>Productos</a> </li>
+                <li class="nav"><a href="#info">Nosotros</a> </li>
+                <li class="nav"><a href="#prod">Productos</a> </li>
+                
                 <img class="img" alt="" src="img\LOGO MACLAR.png">
-                <li><a>Obras</a> </li>
-                <li><a>Contacto</a> </li>
+
+                <li class="nav"><a>Obras</a> </li>
+                <li class="nav"><a href="#contacto">Contacto</a> </li>
             </ul>
         </nav>
-    </header>
-    <section class="zona1">
+    </header> <br>
+
+    <!--CARROUSEL-->
+
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -66,16 +72,114 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
+          <!--Nosotros -->
           <div class="container-info">
             <div id="info" class="info">
                 <h1>Sobre Nosotros</h1>
-                <a>ahjfdghadfgaaaaaadgjahdfhgafdhabhdva auvghairughirugh qerg herug hiuevbeoiuqrfgb quefg adjfb adjfg aiufgb aijfghqi uefqiufgw efiug qefpiqwsbgef qpiugef</a>
+                  <p id="paragraph-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam possimus voluptates nemo. Unde ipsum at esse inventore. Quia optio error, mollitia natus doloremque vel eum pariatur accusantium debitis quas? Rerum!</p>
             </div>
           </div>
 
-    </section>
+          <!-- Productos -->
+          <div id="prod" class="container-Prod">
+            <div ><h1 >Productos</h1></div>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  Column
+                </div>
+                <div class="col">
+                  Column
+                </div>
+                <div class="col">
+                  Column
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Obras -->
+          <div class="container-obr">
+            <h1>Obras</h1>
+          </div>
+          <!--CONTACTO -->
+          <div id="contacto" class="container-tercero">
+            <div class="container-contacto-general" id="abajo">
+                <div class="contacto-title">
+                    <h2>Entremos en contacto </h2>
+                </div>
+                <div class="container-contacto">
+                    <form class="container-contacto" action="https://formsubmit.co/natywolf@mac.com" method="POST"" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-input" name="name" placeholder=" ">
+                            <label for="name" class="form-label">Nombre</label>
+                            <span class="form-line"></span>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="text" id="email" class="form-input" name="email" placeholder=" ">
+                            <label for="email" class="form-label">Email</label>
+                            <span class="form-line"></span>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="text" id="titulo" class="form-input" name="titulo" placeholder=" ">
+                            <label for="titulo" class="form-label">Título</label>
+                            <span class="form-line"></span>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="text" id="mensaje" class="form-input" name="mensaje" placeholder=" ">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <span class="form-line"></span>
+                        </div>
+            
+                        <div class="form-submit">
+                            <button>Enviar</button>
+                        </div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/exito.html">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+            </div>
+            <div class="container-tercero-info">
+                <div class="contacto-title-info">
+                    <h2>Información de contacto</h2>
+                </div>
+                <div class="container-info">
+                    <img class="icono" src="img/icons8-location-100 (1).png" alt="">
+                    <div class="text-info">
+                        <p><b>Dirección: 
+                          <a href="https://www.google.com/maps?q=Sta.+Elena+337,+C1278ACA+CABA">Santa Elena 337 , PB, Barracas</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="container-info">
+                    <img class="icono" src="img/icons8-phone-100.png" alt="">
+                    <div class="text-info">
+                        <p><b>Teléfono:
+                            <a href="callto:+54 9 11 5865-6557">+54 9 11 5865-6557</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="container-info">
+                    <img class="icono"src="img/icons8-telegram-app-100.png" alt="">
+                    <div class="text-info">
+                        <p><b>Email:
+                            <a href="mailto:info@maclar.com.ar?subject=Asunto&body=Cuerpo del mensaje" target="_blank">info@maclar.com.ar<br> </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </form>
+
+
 
     
 </body>
     <script src="fun.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>

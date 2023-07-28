@@ -1,0 +1,134 @@
+/*@media only screen and (max-width: 480px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        display: none;
+    }
+    .contacto-h h2{
+        font-size: 1.8rem;
+    }
+    .menu{
+        display: block;
+        width: 30px;
+        margin-left: -1255px;
+    }
+    .img{
+        text-align: left;
+        margin-right: 1300px;
+        margin-left: 30px;
+        width:300px;
+        display: flex;
+        
+        
+
+    }
+    #carouselExampleCaptions{
+        margin-top: 80px;
+        display: block;
+    }
+    .info h1{
+        display: flex;
+        text-align: left;
+        margin-left: -640px; ;
+    }
+    .info h1 a{
+        display: inline;
+        text-align: left;
+        margin-left: -1200px; ;
+    }
+
+}*/
+/* Estilos para pantallas de 768px o menos (tabletas y teléfonos) */
+@media only screen and (max-width: 768px) {
+    header {
+      padding: 10px 20px;
+    }
+    .img {
+      width: 300px;
+    }
+    .info {
+      padding: 200px;
+      margin-top: -200px;
+    }
+    .container-Prod {
+      padding: 200px;
+    }
+    .container-Prod h1 {
+      font-size: 24px;
+      margin-top: -100px;
+    }
+    .container-Prod .col {
+      margin-top: 200px;
+      margin-bottom: -100px;
+    }
+    .container-obr {
+      padding: 200px;
+      margin-top: -200px;
+    }
+  }
+  
+  /* Estilos para pantallas de 425px o menos (teléfonos) */
+  @media only screen and (max-width: 425px) {
+    header {
+      padding: 5px 10px;
+    }
+    .nav{
+        display: none;
+    }
+    .img {
+      width: 300px;
+      margin-left: 10px;
+    }
+    header ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    header ul li {
+      margin: 10px 0;
+    }
+    .info {
+      padding: 0px;
+      margin-right: 0px;
+      padding-top: 200px;
+      padding-bottom: 300px;
+      text-align: left;
+ 
+
+    }
+    .info h1 {
+      font-size: 30px;
+      margin-bottom: 30px;
+      margin-left: 0;
+      text-align: center;
+    }
+    .info p {
+      display: inline;
+      text-align: left;
+      font-size: 20px;
+      column-count: ;
+      column-gap: 20px;
+    }
+    .container-tercero {
+      flex-direction: column;
+      align-items: center;
+    }
+    .container-contacto-general {
+      width: 80%;
+    }
+    .container-tercero-info {
+      width: 80%;
+    }
+  }
+  .container-contacto{
+    margin-top: 20px;
+  }
+  .container-tercero-info{
+    margin-bottom: 20px;
+  }
+  .nos{
+    display: block;
+
+  }
+  
