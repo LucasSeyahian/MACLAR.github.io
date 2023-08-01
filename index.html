@@ -29,7 +29,7 @@
                 
                 <img class="img" alt="" src="img\LOGO MACLAR.png">
 
-                <li class="nav"><a>Obras</a> </li>
+                <li class="nav"><a href="#obr">Obras</a> </li>
                 <li class="nav"><a href="#contacto">Contacto</a> </li>
             </ul>
         </nav>
@@ -77,7 +77,7 @@
           <div class="container-info">
             <div id="info" class="info">
                 <h1>Sobre Nosotros</h1>
-                  <p id="paragraph-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam possimus voluptates nemo. Unde ipsum at esse inventore. Quia optio error, mollitia natus doloremque vel eum pariatur accusantium debitis quas? Rerum!</p>
+                  <p id="paragraph-container">Industrias Electromecánicas Maclar es una empresa familiar que nace en el año 1976 dedicada a la fabricación de partes y accesorios para la Industria del Ascensor. Se especializa principalmente en la fabricación de Tableros de Maniobra, botoneras de cabina y señalización. Con mas de 55 años en el mercado continua creciendo y adaptándose a los cambios que la tecnología impone.</p>
             </div>
           </div>
 
@@ -100,7 +100,7 @@
 
           </div>
           <!-- Obras -->
-          <div class="container-obr">
+          <div id="obr" class="container-obr">
             <h1>Obras</h1>
           </div>
           <!--CONTACTO -->
@@ -130,13 +130,14 @@
                         </div>
             
                         <div class="form-group">
-                            <input type="text" id="mensaje" class="form-input" name="mensaje" placeholder=" ">
-                            <label for="mensaje" class="form-label">Mensaje</label>
+              
+                            <label for="coments" class="form-label">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                             <span class="form-line"></span>
                         </div>
             
                         <div class="form-submit">
-                            <button>Enviar</button>
+                            <input class="btn" type="submit" value="Enviar" >
                         </div>
                         <input type="hidden" name="_next" value="http://127.0.0.1:5500/exito.html">
                         <input type="hidden" name="_captcha" value="false">

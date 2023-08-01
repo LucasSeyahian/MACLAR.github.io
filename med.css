@@ -1,46 +1,4 @@
-/*@media only screen and (max-width: 480px){
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .nav{
-        display: none;
-    }
-    .contacto-h h2{
-        font-size: 1.8rem;
-    }
-    .menu{
-        display: block;
-        width: 30px;
-        margin-left: -1255px;
-    }
-    .img{
-        text-align: left;
-        margin-right: 1300px;
-        margin-left: 30px;
-        width:300px;
-        display: flex;
-        
-        
 
-    }
-    #carouselExampleCaptions{
-        margin-top: 80px;
-        display: block;
-    }
-    .info h1{
-        display: flex;
-        text-align: left;
-        margin-left: -640px; ;
-    }
-    .info h1 a{
-        display: inline;
-        text-align: left;
-        margin-left: -1200px; ;
-    }
-
-}*/
-/* Estilos para pantallas de 768px o menos (tabletas y teléfonos) */
 @media only screen and (max-width: 768px) {
     header {
       padding: 10px 20px;
@@ -48,12 +6,21 @@
     .img {
       width: 300px;
     }
+    h1 {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px; /* Esto asegura que los elementos h1 ocupen toda la altura de la pantalla */
+      margin: 0; /* Elimina el margen predeterminado del h1 */
+    }
     .info {
       padding: 200px;
       margin-top: -200px;
     }
     .container-Prod {
-      padding: 200px;
+      padding: 100px;
+
     }
     .container-Prod h1 {
       font-size: 24px;
@@ -61,18 +28,27 @@
     }
     .container-Prod .col {
       margin-top: 200px;
-      margin-bottom: -100px;
+      margin-right: 20px;
+      margin-bottom:-50px;
     }
     .container-obr {
       padding: 200px;
+      text-align: center ;
       margin-top: -200px;
+
+  
     }
   }
   
   /* Estilos para pantallas de 425px o menos (teléfonos) */
   @media only screen and (max-width: 425px) {
+    
     header {
       padding: 5px 10px;
+    }
+    .container-obr{
+      margin-right: 30px;
+
     }
     .nav{
         display: none;
@@ -107,7 +83,6 @@
       display: inline;
       text-align: left;
       font-size: 20px;
-      column-count: ;
       column-gap: 20px;
     }
     .container-tercero {
@@ -120,12 +95,14 @@
     .container-tercero-info {
       width: 80%;
     }
+
   }
   .container-contacto{
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .container-tercero-info{
     margin-bottom: 20px;
+    margin-top: 130px;
   }
   .nos{
     display: block;
